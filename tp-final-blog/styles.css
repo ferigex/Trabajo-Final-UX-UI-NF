@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EEF2FF;
+    color: #000;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    background-color: #800000;
+    color: #FFF;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #000;
+}
+
+.board-title {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.board-subtitle {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+nav {
+    background-color: #D6DAF0;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #B7C5D9;
+}
+
+nav a {
+    color: #34345C;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.section-title {
+    margin-bottom: 15px;
+    color: #0F0C5D;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.product {
+    background-color: #FFF;
+    border: 1px solid #B7C5D9;
+    padding: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #B7C5D9;
+    margin-bottom: 8px;
+}
+
+.product-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0F0C5D;
+}
+
+.product-price {
+    color: #CC1105;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.buy-btn {
+    background-color: #FFEAA2;
+    border: 1px solid #D9BF77;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.buy-btn:hover {
+    background-color: #E6D298;
+}
+
+.info-box {
+    background-color: #D6DAF0;
+    border: 1px solid #B7C5D9;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.info-title {
+    font-weight: bold;
+    color: #0F0C5D;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact-form {
+    background-color: #FFF;
+    border: 1px solid #B7C5D9;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.form-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0F0C5D;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #B7C5D9;
+    font-family: Arial, sans-serif;
+}
+
+.submit-btn {
+    background-color: #FFEAA2;
+    border: 1px solid #D9BF77;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #D6DAF0;
+    border-top: 1px solid #B7C5D9;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .catalog {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
